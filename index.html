@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiFit Companion Apk Download</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .hero {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cccccc;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .app-image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0;
+        }
+
+        .app-image-container {
+            width: 400px;
+            height: 750px;
+            background-color: #111111;
+            border: 2px solid #333;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .placeholder-icon {
+            font-size: 64px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .placeholder-text {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .download-section {
+            background-color: #111111;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .download-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .download-section p {
+            font-size: 16px;
+            color: #cccccc;
+            margin-bottom: 40px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 40px 0;
+            border-top: 1px solid #333;
+            text-align: center;
+        }
+
+        footer p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .app-image-container {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">AiFit</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Experience the Machine Learning on Mobile App</h1>
+            <p>Get personalized workouts, track your progress, and stay motivated on your path to a healthier you. Start now and let AI
+            guide you to your best self!.</p>
+
+            <div class="app-image-section">
+                <div class="app-image-container">
+                    <div class="placeholder-icon">📱</div>
+                    <div><img src="test2.png" alt="App Image"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="download-section">
+        <div class="container">
+            <h2>Download Now</h2>
+            <p>Get to use my application now.</p>
+            <a href="#" class="download-button" id="downloadBtn">Download APK</a>
+            <p style="margin-top: 20px; font-size: 12px; color: #666;">Version 2.1.4 • Compatible with Android
+                14.0+</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AiFit. All rights reserved. • Privacy Policy • Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Replace this URL with your actual APK download link
+        const APK_DOWNLOAD_URL = 'https://example.com/path-to-your-app.apk';
+
+        document.getElementById('downloadBtn').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Create a temporary anchor element to trigger download
+            const downloadLink = document.createElement('a');
+            downloadLink.href = APK_DOWNLOAD_URL;
+            downloadLink.download = 'MyApp.apk';
+
+            // Trigger the download
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+
+            // Optional: Show a confirmation message
+            alert('Download started! Please check your downloads folder.');
+        });
+    </script>
+</body>
+
+</html>
